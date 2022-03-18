@@ -21,7 +21,7 @@ while True:
         while sub_fixo <= 10:
             sub_variavel = 1
             while sub_variavel <= 10:
-                print(f'{sub_fixo} + {sub_variavel} = {sub_fixo + sub_variavel}')
+                print(f'{sub_fixo} - {sub_variavel} = {sub_fixo - sub_variavel}')
                 sub_variavel += 1
             sub_fixo += 1
             print('---------------')
@@ -32,7 +32,7 @@ while True:
         while dividendo <= 10:
             divisor = 1
             while divisor <= 10:
-                print(f'{dividendo} x {divisor} = {dividendo * divisor}')
+                print(f'{dividendo} : {divisor} = {dividendo / divisor}')
                 divisor += 1
             dividendo += 1
             print('---------------')
