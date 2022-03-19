@@ -22,7 +22,7 @@ else:
         else:
             print(f'{numero} não é primo porque é divisível por {x}')
 
-            
+
 
 
 
