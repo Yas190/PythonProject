@@ -8,13 +8,13 @@ while True:
     print(f'Existem {len(fila)} clientes na fila')
     print(f'Fila atual: {fila}')
     print('Digite F para adicionar um cliente ao final da fila,\nA para realizar o atendimento\nou S para sair.')
-    operacao = input('F, A ou S: ')
+    operacao = (input('F, A ou S: ')).upper()
     x = 0
-    sair = False
+
     while x < len(fila):
         if operacao[x] == 'A':
             if len(fila) > 0:
-                atendido = fila.pop(0)          #O método .pop retira o elemento da fila e exibe o elemento retirado!
+                atendido = fila.pop(0)
                 print(f'Cliente {atendido} atendido!')
             else:
                 print('Fila vazia!')
@@ -22,11 +22,11 @@ while True:
             ultimo += 1
             fila.append(ultimo)
         elif operacao[x] == 'S':
-            sair = True
+
             break
         else:
             print('Operação inválida. Digite apena A, F ou S')
         print(f'Fila atual: {fila}')
         x += 1
-    if sair:
+    if operacao == 'S':
         break
