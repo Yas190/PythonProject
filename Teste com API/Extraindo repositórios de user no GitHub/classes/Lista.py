@@ -1,3 +1,4 @@
+#Criando as classes e os metodos
 import requests
 import json
 
